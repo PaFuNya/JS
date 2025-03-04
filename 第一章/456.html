@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font{
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>变量是程序在内存中申请的一块用来存放数据的空间</h2>
+    <p>题目1：声明一个变量 name，赋值为你的名字，并打印出来。</p>
+
+    <script>
+        var a = prompt("请输入你的名字");
+        document.write("<div class='font'>您好！" + a +  "!</div>");
+    </script>
+    <br>
+
+    <p>题目 2：声明两个变量 num1 和 num2，分别赋值为 10 和 20，计算它们的和并打印结果。</p>
+    <script>var num1 = 10, num2 = 20;
+        var sum = num1 + num2;
+        document.write(sum)
+    </script>
+
+    <br>
+    <p>题目 3：声明一个布尔变量 isStudent，赋值为 true，并打印出来。</p>
+    <script>var isStudengt = true;
+        document.write(isStudengt)
+    </script>
+
+    <p>题目 4：给定两个变量 a = 15 和 b = 4，计算 a 除以 b 的商和余数，并打印结果。</p>
+        <script>
+            var a=15,b=4;
+            var c=a/b;
+            var d=a%b;
+            document.write(c+" "+d)
+        </script>
+
+    <p>题目 5：给定一个变量 age = 18，判断是否大于等于 18 岁，如果是则打印 "成年人"，否则打印 "未成年人"。</p>
+        <script>
+            var age=18;
+            if(age>=18){
+                document.write("Man")
+            }else{
+                document.write("Child")
+            }
+        </script>
+    <br>
+    <p>题目 6：给定一个变量 score = 85，判断成绩是否在 90 分以上（优秀）、80-89 分（良好）、60-79 分（及格）或 60 分以下（不及格），并打印结果。</p>
+        <script>
+            var score=85;
+            if(score>=90){
+                document.write("优秀")
+            }else if(score>=80 && score<90){
+                document.write("良好")
+            }else if(score>=60 && score<80){
+                document.write("及格")
+            }else{
+                document.write("不及格")
+            }
+        </script>
+    </p>
+
+    <p>题目 9：使用 for 循环打印 1 到 10 的所有数字。</p>
+    <script>
+        for(var i=1;i<=10;i++){
+            document.write(i+"<br>")
+        }
+    </script>
+
+    <p>题目 10：使用 while 循环计算 1 到 100 的和，并打印结果。</p>
+    <script>
+        while(i<=100){
+            sum+=i;
+            i++;
+        }
+        document.write(sum)
+    </script>
+
+    <p>题目 11：使用 for 循环打印九九乘法表。</p>
+    <script>
+        for(var i=1;i<=9;i++){
+            for(var j=1;j<=i;j++){
+                document.write(j+"*"+i+"="+j*i+" ")
+            }
+            document.write("<br>")
+        }
+    </script>
+    <script>
+        var num1=21;    //int
+        var num2=0.21;  //float
+        var bool=true;  //bool
+        var str="hello"; //string
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
